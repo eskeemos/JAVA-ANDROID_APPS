@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateMessageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        tools:layout_editor_absoluteX="-56dp"
+        tools:layout_editor_absoluteY="-137dp">
+
+
+        <Button
+            android:id="@+id/bSendMess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="onMessageSend"
+            android:layout_marginTop="25dp"
+            android:text="@string/bSendMess" />
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/bSendMess"
+            android:layout_marginTop="15dp"
+            android:autofillHints=""
+            tools:ignore="LabelFor,TextFields" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
