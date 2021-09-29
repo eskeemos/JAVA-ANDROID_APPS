@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UkladHerbata</string>
+    <string name="desc">Dziękujemy za wybranie naszej wspaniałej herbaty.
+        W jaki sposób mamy Ci ja podać?</string>
+    <string name="temp">Temperatura</string>
+    <string name="tbTempOn">GORĄCA</string>
+    <string name="tbTempOff">ZIMNA</string>
+    <string name="Milk">Mleko</string>
+    <string name="Sugar">Cukier</string>
+    <string name="Lemon">Cytryna</string>
+</resources>
