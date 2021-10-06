@@ -2,4 +2,7 @@
     <string name="app_name">Trenero</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bStart">START</string>
+    <string name="bStop">STOP</string>
+    <string name="bRestart">RESTART</string>
 </resources>
