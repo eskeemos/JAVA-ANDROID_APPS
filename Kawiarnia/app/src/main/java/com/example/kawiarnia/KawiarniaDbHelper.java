@@ -38,7 +38,7 @@ public class KawiarniaDbHelper extends SQLiteOpenHelper {
         }
         if(oldVersion < 2)
         {
-            db.execSQL("ALTER TABLE DRINK ADD COLUMN FAVOURITE NUMERIC");
+            db.execSQL("ALTER TABLE DRINK ADD COLUMN FAVORITE NUMERIC");
         }
     }
 
