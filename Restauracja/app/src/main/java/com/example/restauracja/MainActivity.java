@@ -36,8 +36,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         titles = getResources().getStringArray(R.array.titles);
-        drawerList = (ListView)findViewById(R.id.drawer);
-        drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
+        drawerList = findViewById(R.id.drawer);
+        drawerLayout = findViewById(R.id.drawer_layout);
         drawerList.setAdapter(new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_activated_1, titles
         ));
@@ -77,7 +77,7 @@ public class MainActivity extends Activity {
                     public void onBackStackChanged() {
                         FragmentManager fragMan = getFragmentManager();
                         Fragment frag = fragMan.findFragmentByTag("visible_fragment");
-                        if(frag instanceof  PizzaFragment){
+                        if(frag instanceof  PizzaMaterialFragment){
                             currPosition = 1;
                         }else if(frag instanceof  PastaFragment){
                             currPosition = 2;
@@ -115,7 +115,8 @@ public class MainActivity extends Activity {
         switch (position)
         {
             case 1:
-                fragment = PizzaFragment.newInstance();
+//                fragment = PizzaFragment.newInstance();
+                fragment = PizzaMaterialFragment.newInstance();
                 break;
             case 2:
                 fragment = PastaFragment.newInstance();

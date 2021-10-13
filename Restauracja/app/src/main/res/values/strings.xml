@@ -6,6 +6,7 @@
     <string name="hello_blank_fragment">Hello Top fragment</string>
     <string name="open_drawer">Otwórz szufladę</string>
     <string name="close_drawer">Zamknij szufladę</string>
+    <string name="tvWelcome">Oferujemy bogaty wybór świeżo wypiekanych pizz oraz dań z makaronu.</string>
     <string-array name="pizza">
         <item>Roma</item>
         <item>Verona</item>
