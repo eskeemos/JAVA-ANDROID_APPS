@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TeaLayout</string>
+    <string name="tvWelcome">Welcome! How to serve the tea?</string>
+    <string name="temp">Tea Temperature :</string>
+    <string name="cold">COLD</string>
+    <string name="hot">HOT</string>
+    <string name="extra">Extras :</string>
+    <string name="Milk">Milk</string>
+    <string name="Sugar">Sugar</string>
+    <string name="Lemon">Lemon</string>
+</resources>
