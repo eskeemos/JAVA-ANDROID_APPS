@@ -1,0 +1,62 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        app:columnCount="2"
+        app:rowCount="3"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            app:layout_column="0"
+            app:layout_gravity="center"
+            app:layout_row="0" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="@string/emailHint"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            app:layout_column="1"
+            app:layout_gravity="fill_horizontal"
+            app:layout_row="0" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="@string/messHint"
+            android:inputType="text"
+            android:padding="10dp"
+            app:layout_column="0"
+            app:layout_columnSpan="2"
+            app:layout_gravity="fill"
+            app:layout_row="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bSendMessage"
+            app:layout_column="0"
+            app:layout_columnSpan="2"
+            app:layout_gravity="center_horizontal"
+            app:layout_row="2" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

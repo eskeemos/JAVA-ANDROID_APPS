@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">UkladGrid</string>
-    <string name="to">To :</string>
-    <string name="enterMail">Enter Your Email</string>
-    <string name="messTheme">Enter Your Message</string>
-    <string name="bSendMess">Send Message</string>
-</resources>
