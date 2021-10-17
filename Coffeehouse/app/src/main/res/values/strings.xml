@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Coffeehouse</string>
+    <string name="imgDesc">Image description</string>
+    <string name="categoryTitle">Categories</string>
+    <string name="favTitle">Your favorite drinks</string>
+
+    <string-array name="categories">
+        <item>Drinks</item>
+        <item>Snacks</item>
+        <item>Courses</item>
+    </string-array>
+</resources>
