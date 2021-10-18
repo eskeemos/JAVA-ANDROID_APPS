@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Odometer</string>
+    <string name="units">unit/units</string>
+    <string name="welcomeText">"You passed : "</string>
+    <string name="startDistance">0.00</string>
+</resources>
