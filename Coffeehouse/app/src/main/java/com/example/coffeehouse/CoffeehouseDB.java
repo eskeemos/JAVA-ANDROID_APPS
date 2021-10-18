@@ -8,7 +8,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class CoffeehouseDB extends SQLiteOpenHelper {
 
     private static final String DB_NAME = "caffeine";
-    private static final int DB_VERSION = 1;
+//    private static final int DB_VERSION = 1;
+    private static final int DB_VERSION = 2;
 
     public CoffeehouseDB(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -16,10 +17,10 @@ public class CoffeehouseDB extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        getNewestDB(sqLiteDatabase, 0, DB_VERSION);
+        getNewestDB(sqLiteDatabase, 0);
     }
 
-    private void getNewestDB(SQLiteDatabase sqLiteDatabase, int oldV, int newV) {
+    private void getNewestDB(SQLiteDatabase sqLiteDatabase, int oldV) {
         if(oldV < 1) {
             sqLiteDatabase.execSQL("CREATE TABLE DRINK (_id INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT, DESC TEXT, IMG_RESOURCE INTEGER)");
             insertDrink(sqLiteDatabase, "Iced Coffee", "A coffee with ice, typically served with a dash of milk, cream or sweetener", R.drawable.cafe);
@@ -27,9 +28,9 @@ public class CoffeehouseDB extends SQLiteOpenHelper {
             insertDrink(sqLiteDatabase, "Cappuccino", "Cappuccino is a latte made with more foam than steamed milk with a sprinkle of cocoa powder", R.drawable.cafe);
         }
 
-//        if(oldV < 2) {
-//            sqLiteDatabase.execSQL("ALTER TABLE DRINK ADD COLUMN FAVORITE NUMERIC");
-//        }
+        if(oldV < 2) {
+            sqLiteDatabase.execSQL("ALTER TABLE DRINK ADD COLUMN FAVORITE NUMERIC");
+        }
     }
 
     @Override
@@ -39,7 +40,7 @@ public class CoffeehouseDB extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-        getNewestDB(sqLiteDatabase, i, i1);
+        getNewestDB(sqLiteDatabase, i);
     }
 
     private static void insertDrink(SQLiteDatabase sqLiteDatabase, String name, String desc, int img_resource) {

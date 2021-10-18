@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Coffeehouse">
         <activity
+            android:name=".DrinkActivity"
+            android:exported="true" />
+        <activity
             android:name=".DrinkCategoryActivity"
             android:exported="true" />
         <activity
